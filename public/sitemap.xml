@@ -3,7 +3,7 @@
 
   <!-- Homepage (full page) -->
   <url>
-    <loc>https://www.stepup.systems/</loc>
+    <loc>https://www.technas.systems/</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -11,21 +11,21 @@
 
   <!-- Section anchors — helps search engines understand page structure -->
   <url>
-    <loc>https://www.stepup.systems/#approach</loc>
+    <loc>https://www.technas.systems/#approach</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.stepup.systems/#capabilities</loc>
+    <loc>https://www.technas.systems/#capabilities</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.stepup.systems/#why</loc>
+    <loc>https://www.technas.systems/#why</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

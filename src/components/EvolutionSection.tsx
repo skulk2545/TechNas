@@ -23,7 +23,7 @@ const EvolutionSection = () => (
           Long-term infrastructure, <span className="text-muted-foreground">not short-term projects.</span>
         </h2>
         <p className="mt-4 text-muted-foreground">
-          StepUp systems are designed for progression. Each phase builds on the last, creating compounding operational advantage.
+          TechNas systems are designed for progression. Each phase builds on the last, creating compounding operational advantage.
         </p>
       </motion.div>
 
@@ -39,9 +39,8 @@ const EvolutionSection = () => (
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`relative flex items-start gap-6 md:gap-0 ${
-                i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
+              className={`relative flex items-start gap-6 md:gap-0 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                }`}
             >
               {/* Node */}
               <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-background font-display text-sm font-bold text-primary md:absolute md:left-1/2 md:-translate-x-1/2">

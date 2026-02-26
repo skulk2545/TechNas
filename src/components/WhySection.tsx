@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 
 const differentiators = [
   { title: "Structured Architecture", desc: "Every system we build follows a deliberate, documented structure — no spaghetti, no shortcuts." },
-  { title: "Managed Partnership", desc: "We don't hand off and disappear. StepUp is a long-term partner in your operational evolution." },
+  { title: "Managed Partnership", desc: "We don't hand off and disappear. TechNas is a long-term partner in your operational evolution." },
   { title: "Clean, Modular Design", desc: "Components that can be independently upgraded, replaced, or extended without disrupting the whole." },
   { title: "Strategic Implementation", desc: "We start with your business logic, not a template. Every decision is intentional." },
   { title: "Built for Scale", desc: "Architecture that handles growth gracefully — from early traction to enterprise-grade demand." },
@@ -31,13 +31,13 @@ const WhySection = () => (
         transition={{ duration: 0.6 }}
         className="mb-16 text-center"
       >
-        <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">Why StepUp</p>
+        <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">Why TechNas</p>
         <h2 className="font-display text-3xl font-bold leading-tight md:text-4xl">
           <span className="text-bloom inline-block cursor-default">Engineered for businesses that</span>{" "}
           <span className="text-gradient text-bloom-gradient inline-block cursor-default">think in systems.</span>
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-          We work with organizations that understand the difference between a tool and an infrastructure. StepUp is for teams ready to build the right way.
+          We work with organizations that understand the difference between a tool and an infrastructure. TechNas is for teams ready to build the right way.
         </p>
       </motion.div>
 

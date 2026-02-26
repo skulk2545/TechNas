@@ -35,7 +35,7 @@ const ApproachSection = () => (
         transition={{ duration: 0.6 }}
         className="mb-16 text-center"
       >
-        <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">The StepUp Approach</p>
+        <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">The TechNas Approach</p>
         <h2 className="mx-auto max-w-3xl font-display text-3xl font-bold leading-tight md:text-4xl">
           <span className="text-bloom inline-block cursor-default">From fragmented tools to</span>{" "}
           <span className="text-gradient text-bloom-gradient inline-block cursor-default">unified systems.</span>

@@ -10,14 +10,14 @@ const Navbar = () => {
   const links = [
     { label: "Approach", href: "#approach" },
     { label: "Capabilities", href: "#capabilities" },
-    { label: "Why StepUp", href: "#why" },
+    { label: "Why TechNas", href: "#why" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto flex h-16 lg:h-20 items-center justify-between px-6 lg:px-8">
         <a href="#" className="font-display text-xl lg:text-2xl font-bold tracking-tight text-foreground">
-          Step<span className="text-primary">Up</span>
+          Tech<span className="text-primary">Nas</span>
         </a>
 
         <div className="hidden items-center gap-8 lg:gap-10 md:flex">

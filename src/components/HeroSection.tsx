@@ -59,7 +59,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl lg:mt-8 lg:max-w-4xl lg:text-2xl">
-            StepUp designs and implements structured commerce and operational systems that give your business clarity, control, and the foundation to grow.
+            TechNas designs and implements structured commerce and operational systems that give your business clarity, control, and the foundation to grow.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:mt-14 lg:gap-6">
@@ -68,7 +68,7 @@ const HeroSection = () => {
               className="glow-md gap-2 px-8 text-base lg:h-14 lg:px-10 lg:text-lg"
               onClick={() => setModalOpen(true)}
             >
-              Talk to StepUp
+              Talk to TechNas
               <ArrowRight size={16} className="lg:h-5 lg:w-5" />
             </Button>
 

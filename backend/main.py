@@ -67,7 +67,7 @@ class SubmissionResponse(SubmissionCreate):
         orm_mode = True
 
 # FastAPI App setup
-app = FastAPI(title="StepUp Landing Page API")
+app = FastAPI(title="TechNas Landing Page API")
 
 # Initialize SlowAPI Limiter state
 app.state.limiter = limiter
