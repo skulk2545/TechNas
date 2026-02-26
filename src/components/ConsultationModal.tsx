@@ -30,6 +30,7 @@ export function ConsultationModal({ open, onOpenChange }: ConsultationModalProps
 
     const form = useForm<FormValues>({
         resolver: zodResolver(formSchema),
+        mode: "onTouched",
         defaultValues: {
             first_name: "",
             last_name: "",
@@ -96,7 +97,11 @@ export function ConsultationModal({ open, onOpenChange }: ConsultationModalProps
                                     <FormItem>
                                         <FormLabel>First name</FormLabel>
                                         <FormControl>
-                                            <Input placeholder="First Name" className="bg-background/50 border-border" {...field} />
+                                            <Input
+                                                placeholder="First Name"
+                                                className={`bg-background/50 ${form.formState.errors.first_name ? 'border-destructive' : 'border-border'}`}
+                                                {...field}
+                                            />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -109,7 +114,11 @@ export function ConsultationModal({ open, onOpenChange }: ConsultationModalProps
                                     <FormItem>
                                         <FormLabel>Last name</FormLabel>
                                         <FormControl>
-                                            <Input placeholder="Last Name" className="bg-background/50 border-border" {...field} />
+                                            <Input
+                                                placeholder="Last Name"
+                                                className={`bg-background/50 ${form.formState.errors.last_name ? 'border-destructive' : 'border-border'}`}
+                                                {...field}
+                                            />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -123,7 +132,12 @@ export function ConsultationModal({ open, onOpenChange }: ConsultationModalProps
                                 <FormItem>
                                     <FormLabel>Email</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Your Email here" type="email" className="bg-background/50 border-border" {...field} />
+                                        <Input
+                                            placeholder="Your Email here"
+                                            type="email"
+                                            className={`bg-background/50 ${form.formState.errors.email ? 'border-destructive' : 'border-border'}`}
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -160,7 +174,12 @@ export function ConsultationModal({ open, onOpenChange }: ConsultationModalProps
                                     <FormItem className="flex-1">
                                         <FormLabel>Mobile number</FormLabel>
                                         <FormControl>
-                                            <Input placeholder="1234567890" type="tel" className="bg-background/50 border-border" {...field} />
+                                            <Input
+                                                placeholder="1234567890"
+                                                type="tel"
+                                                className={`bg-background/50 ${form.formState.errors.phone_number ? 'border-destructive' : 'border-border'}`}
+                                                {...field}
+                                            />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
