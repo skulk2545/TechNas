@@ -51,7 +51,7 @@ export function ConsultationModal({ open, onOpenChange }: ConsultationModalProps
         };
 
         try {
-            const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://technas.onrender.com/";
+            const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://0.0.0.0:10000";
             const response = await fetch(`${backendUrl}/api/consultation`, {
                 method: "POST",
                 headers: {
