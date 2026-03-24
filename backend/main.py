@@ -23,8 +23,8 @@ load_dotenv()
 limiter = Limiter(key_func=get_remote_address)
 
 # Database Configuration
-# Default postgres local setup, modify credentials if using a different setup.
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql:///landing_page")
+# Default sqlite local setup for easy running, modify credentials if using postgres.
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./landing_page.db")
 engine = create_engine(DATABASE_URL)
 
 # Create database if it doesn't exist
@@ -45,6 +45,9 @@ class Submission(Base):
     email = Column(String, nullable=False)
     mobile_number = Column(String, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+# Create tables
+Base.metadata.create_all(bind=engine)
 
 # Pydantic Schemas for Validation
 class SubmissionCreate(BaseModel):
