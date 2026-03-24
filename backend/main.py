@@ -16,6 +16,7 @@ from slowapi.errors import RateLimitExceeded
 from fastapi.responses import JSONResponse
 from email_service import send_team_alert, send_user_confirmation
 
+
 # Load backend environment variables
 load_dotenv()
 
@@ -70,12 +71,20 @@ class SubmissionResponse(SubmissionCreate):
         orm_mode = True
 
 # FastAPI App setup
+
 app = FastAPI(title="TechNas Landing Page API")
+
 
 # Initialize SlowAPI Limiter state
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # temporary
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Custom Middleware for Security Headers
 @app.middleware("http")
 async def add_security_headers(request: Request, call_next):
