@@ -1,49 +1,79 @@
-# TechNas
+# Project Overview
+TechNas is a scalable solution designed to simplify technology integration and enhance productivity for businesses of all sizes. The project aims to provide users with a seamless interface for managing their technology stacks efficiently.
 
-A modern full-stack web application for structured system management built with React, TypeScript, FastAPI, and PostgreSQL.
+# Technology Stack
+- **Frontend:** React.js
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Deployment:** Docker, AWS
 
-**Live Demo**: [tech-nas.vercel.app](https://tech-nas.vercel.app)
+# Project Structure
+```
+TechNas/
+├── client/         # Frontend code
+│   └── ...
+├── server/         # Backend code
+│   └── ...
+└── README.md
+```
 
----
+# Getting Started Guide
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/skulk2545/TechNas.git
+   cd TechNas
+   ```
+2. Install dependencies:
+   - For the frontend:
+     ```bash
+     cd client
+     npm install
+     ```
+   - For the backend:
+     ```bash
+     cd server
+     npm install
+     ```
+3. Start the application:
+   - For the frontend:
+     ```bash
+     npm start
+     ```
+   - For the backend:
+     ```bash
+     npm run dev
+     ```
 
-## 🎯 Overview
+# Testing
+To run tests, navigate to the server directory and run:
+```bash
+npm test
+```
 
-TechNas is a professionally designed web application featuring:
-- **Modern UI** with responsive design using Tailwind CSS and Shadcn UI components
-- **High-performance frontend** built with React 18 and Vite
-- **Scalable backend API** powered by FastAPI
-- **Form handling** with validation using React Hook Form and Zod
-- **Real-time notifications** via Sonner toast system
+# Available Scripts
+- `npm start`: Starts the client application.
+- `npm run dev`: Starts the server in development mode.
+- `npm test`: Runs the tests.
 
----
+# Environment Variables
+- `DB_URL`: Database connection string.
+- `PORT`: The port on which the server runs.
 
-## 🚀 Technology Stack
+# Key Features
+- User authentication and authorization.
+- Real-time data processing.
+- An intuitive dashboard for user insights.
 
-### Frontend
-- **React 18** with TypeScript
-- **Vite 7** - lightning-fast build tool
-- **Tailwind CSS 3** - utility-first styling with animations
-- **Shadcn UI** - accessible component library built on Radix UI
-- **React Hook Form** + **Zod** - form management & validation
-- **TanStack Query** - data fetching & caching
-- **Framer Motion** - smooth animations
-- **Lucide React** - beautiful icons
-- **React Router v6** - client-side routing
+# Contributing Guidelines
+We welcome contributions! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Create a new Pull Request.
 
-### Backend
-- **FastAPI** - modern Python web framework
-- **SQLAlchemy 2.0** - ORM for database operations
-- **Pydantic v2** - data validation
-- **Alembic** - database migrations
-- **SlowAPI** - rate limiting
-- **aiosmtplib** - asynchronous email support
+# License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Development Tools
-- **ESLint** - code quality
-- **Vitest** - unit testing
-- **PostCSS** - CSS processing
-- **TypeScript** - type safety
-
----
-
-## 📂 Project Structure
+# Support
+For any inquiries or support, please reach out to our support team at support@technas.com.
